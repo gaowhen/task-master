@@ -1,0 +1,27 @@
+{
+  "name": "task-master",
+  "version": "0.0.1",
+  "description": "gulp task collection",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "gulp hook"
+  },
+  "repository": "https://github.com/gaowhen/task-master.git",
+  "author": "Miko Gao <gaowhen@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "connect-logger": "0.0.1",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.11.0",
+    "jade": "^1.9.0",
+    "method-override": "^2.3.1",
+    "request": "^2.51.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "gulp-symlink": "^2.1.0",
+    "jshint-stylish": "^1.0.0"
+  }
+}
