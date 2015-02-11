@@ -1,5 +1,4 @@
-var gulp = require('./gulp')([
-  'lint',
-  'hook'
-]);
+var gulp = require('gulp');
+var requireDir = require('require-dir');
 
+requireDir('./gulp/task', {recurse: true});

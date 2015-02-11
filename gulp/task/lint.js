@@ -2,7 +2,7 @@
  * Created by gaowhen on 15/1/15.
  */
 
-var config = require('../../config/gulp');
+var config = require('config').gulp;
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 
