@@ -5,6 +5,9 @@ gulp task collection
 ### Tasks
 
 * gulp-lint
+* gulp-hook
+* gulp-less
+* gulp-minify
 
 ### MIT license
 
