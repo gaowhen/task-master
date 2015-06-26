@@ -10,6 +10,7 @@ Gulp tasks collection
 * gulp-lint
 * gulp-minify
 * gulp-watch(with livereload)
+* gulp-watchify
 
 ### MIT license
 
