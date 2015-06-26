@@ -2,3 +2,4 @@ node_modules/
 .git
 *.map
 .idea/
+static/script/lib/*
