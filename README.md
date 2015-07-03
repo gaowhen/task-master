@@ -6,10 +6,11 @@ Gulp tasks collection
 
 * gulp-browserify
 * gulp-hook
+* gulp-jade
 * gulp-less
-* gulp-stylus
 * gulp-lint
 * gulp-minify
+* gulp-stylus
 * gulp-watch(with livereload)
 * gulp-watchify
 
