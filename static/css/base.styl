@@ -12,26 +12,19 @@ global-reset()
 
 body
   font-size: 14px
-  font-family: 'Microsoft YaHei' Helvetica, Arial, Sans-serif
-  color: $text_color
-  background: $page_bg
+  font-family: 'Microsoft YaHei', Helvetica, Arial, Sans-serif
   -webkit-font-smoothing: antialiased
   word-break: break-all
 
 a
-  color: $brand_pink
   text-decoration: none
 
   &:hover,
   &:focus
     text-decoration: none
-    color: $brand_pink
 
   &:focus
     tab-focus()
-
-.hide
-  display: none !important
 
 .clearfix
   clearfix()

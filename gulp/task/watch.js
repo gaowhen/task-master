@@ -1,16 +1,30 @@
 var gulp = require('gulp');
 var config = require('config').gulp;
-var less = require('./less');
-var less = require('./stylus');
 var livereload = require('gulp-livereload');
-var watchify = require('./watchify');
+var watch = require('gulp-watch');
 
-gulp.task('watch', function () {
+gulp.task('watch', ['less', 'stylus', 'watchify', 'image', 'jade'], function () {
   livereload.listen({
     start: true
   });
 
-  gulp.watch(config.src.css + '/**/*.less', ['less']).on('change', livereload.changed);
-  gulp.watch(config.src.css + '/**/*.styl', ['stylus']).on('change', livereload.changed);
-  gulp.watch(config.src.js + '/**/*.js', ['watchify']).on('change', livereload.changed);
+  watch(config.src.css + '/**/*.less', function () {
+    gulp.start('less');
+  }).on('change', livereload.changed);
+
+  watch(config.src.css + '/**/*.styl', function () {
+    gulp.start('stylus')
+  }).on('change', livereload.changed);
+
+  watch(config.src.js + '/**/*.js', function () {
+    gulp.start('watchify')
+  }).on('change', livereload.changed);
+
+  watch(config.src.img + '/**/*.+(png|gif|jpg|eot|woff|ttf|svg|ico)', function () {
+    gulp.start('image')
+  });
+
+  watch(config.src.view + '/**/*.jade', function () {
+    gulp.start('jade')
+  });
 });
