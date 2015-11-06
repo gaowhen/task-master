@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/gaowhen/Documents/work/task-master/static/css/main.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,SAAA;;AAGF;EACE,qBAAA","file":"main.css","sourcesContent":["*{\n  padding:0;\n  margin:0;\n}\n\na{\n  text-decoration:none;\n}"],"sourceRoot":"/source/"}
