@@ -1,4 +1,5 @@
 *.log
+*.swp
 /tmp
-/dist
+/build
 /node_modules

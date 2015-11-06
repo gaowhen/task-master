@@ -1,43 +1,62 @@
 {
   "name": "task-master",
-  "version": "0.0.1",
-  "description": "gulp task collection",
+  "version": "0.1.0",
+  "description": "a gulp tasks collection",
   "main": "app.js",
   "scripts": {
+    "start": "gulp",
     "postinstall": "gulp hook"
   },
   "repository": "https://github.com/gaowhen/task-master.git",
-  "author": "Miko Gao <gaowhen@qq.com>",
+  "author": "Miko Gao <gaowhen.com@gmail.com>",
   "license": "MIT",
+  "browserify-shim": {
+    "jquery": "global:$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
   "dependencies": {
-    "body-parser": "^1.10.1",
-    "config": "^1.12.0",
+    "body-parser": "1.14.1",
+    "config": "1.16.0",
     "connect-logger": "0.0.1",
-    "cookie-parser": "^1.3.3",
-    "express": "^4.11.0",
-    "jade": "^1.9.0",
-    "method-override": "^2.3.1",
-    "request": "^2.51.0"
+    "cookie-parser": "1.4.0",
+    "express": "4.13.3",
+    "jade": "1.11.0",
+    "method-override": "2.3.5",
+    "request": "2.65.0"
   },
   "devDependencies": {
-    "browserify": "^8.1.0",
-    "gulp": "^3.8.10",
-    "gulp-jade": "^1.0.1",
-    "gulp-jshint": "^1.9.0",
-    "gulp-less": "^3.0.1",
-    "gulp-less-sourcemap": "^1.4.1",
-    "gulp-livereload": "^3.7.0",
-    "gulp-minify-css": "^0.4.5",
-    "gulp-sourcemaps": "^1.3.0",
-    "gulp-stylus": "^2.0.0",
-    "gulp-symlink": "^2.1.0",
-    "gulp-uglify": "^1.2.0",
-    "gulp-watch": "^4.2.4",
-    "jeet": "^6.1.2",
-    "jshint-stylish": "^1.0.0",
-    "nib": "^1.0.2",
-    "require-dir": "^0.1.0",
-    "vinyl-transform": "^1.0.0",
-    "watchify": "^2.2.1"
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-react": "^6.1.2",
+    "babelify": "^7.2.0",
+    "browserify": "12.0.1",
+    "browserify-shim": "^3.8.11",
+    "gulp": "3.9.0",
+    "gulp-if": "^2.0.0",
+    "gulp-include": "^2.0.3",
+    "gulp-jade": "1.1.0",
+    "gulp-jshint": "1.12.0",
+    "gulp-less": "3.0.1",
+    "gulp-less-sourcemap": "1.4.1",
+    "gulp-livereload": "3.8.1",
+    "gulp-minify-css": "1.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-stylus": "2.1.0",
+    "gulp-symlink": "2.1.3",
+    "gulp-uglify": "1.4.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "4.3.5",
+    "jeet": "6.1.2",
+    "jshint-stylish": "2.0.1",
+    "nib": "1.0.2",
+    "object-assign": "^4.0.1",
+    "require-dir": "0.3.0",
+    "through2": "^2.0.0",
+    "vinyl-transform": "1.0.0",
+    "watchify": "3.6.0"
   }
 }
