@@ -7,6 +7,7 @@ var src = {
   img: path.resolve(__dirname, '../static/img'),
   jshintrc: path.resolve(__dirname, '../.jshintrc'),
   precommit: path.resolve(__dirname, '../.pre-commit'),
+  commitmsg: path.resolve(__dirname, '../.commit-msg.js'),
   git: path.resolve(__dirname, '../.git'),
   view: path.resolve(__dirname, '../view')
 }
