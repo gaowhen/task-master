@@ -11,6 +11,7 @@ Gulp tasks collection
 * gulp-jade
 * gulp-less
 * gulp-lint
+* gulp-eslint
 * gulp-minify
 * gulp-stylus
 * gulp-watch(with livereload)
