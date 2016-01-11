@@ -39,6 +39,7 @@
     "browserify": "13.0.0",
     "browserify-shim": "^3.8.11",
     "conventional-changelog": "^0.5.3",
+    "cz-conventional-changelog": "^1.1.5",
     "gulp": "3.9.0",
     "gulp-cssnano": "^2.1.0",
     "gulp-if": "^2.0.0",
@@ -64,5 +65,10 @@
     "vinyl-transform": "1.0.0",
     "watchify": "3.7.0",
     "yards": "^0.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
