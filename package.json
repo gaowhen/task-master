@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "gulp",
-    "postinstall": "gulp hook"
+    "postinstall": "gulp hook",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "repository": "https://github.com/gaowhen/task-master.git",
   "author": "Miko Gao <gaowhen.com@gmail.com>",
@@ -37,6 +38,7 @@
     "babelify": "^7.2.0",
     "browserify": "13.0.0",
     "browserify-shim": "^3.8.11",
+    "conventional-changelog": "^0.5.3",
     "gulp": "3.9.0",
     "gulp-cssnano": "^2.1.0",
     "gulp-if": "^2.0.0",
