@@ -7,15 +7,8 @@ CHANGED_ASSETS="$(git diff --cached --name-only --diff-filter=ACM 2>/dev/null | 
 
 if [ -n "${CHANGED_ASSETS}" ]; then
     gulp lint --file="${CHANGED_ASSETS}"
+    gulp eslint --file="${CHANGED_ASSETS}"
     exit $?
 else
     exit 0
 fi
-
-# lint all js files defined in the gulp lint task: it is unnecessary in theory, though it does not matter in practice.
-# if git diff --cached --name-only --diff-filter=ACM | grep '.js$' >/dev/null 2>&1
-# then
-#  ./node_modules/.bin/gulp lint
-# fi
-#
-# exit $?

@@ -1,0 +1,25 @@
+{
+  "ecmaFeatures": { // 开启jsx支持
+    "jsx": true,
+    "modules": true
+  },
+  "plugins": [ // 开启插件
+    "react"
+  ],
+  "env": {
+    "es6": true,
+    "jquery": true
+  },
+  "rules": {
+    "curly": 2, // 条件、循环语句要带花括号
+    "indent": [2, 2, {"SwitchCase": 1}],// 设置一个tab为几个空格
+    "semi": [2, "never"], // 强制不使用分号
+    "no-multiple-empty-lines": 2, // from noempty 禁止连续多个空行
+    "no-undefined": 2, // 禁止使用未定义的变量
+    "no-use-before-define": [2, "nofunc"], // 禁止在定义前使用变量
+    "no-eval": 2, // 禁用eval
+    "valid-typeof": 2, // 允许不合法的 typeof 操作
+    "no-console": 2,
+    "no-debugger": 2
+  }
+}
