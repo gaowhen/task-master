@@ -57,6 +57,7 @@
     "require-dir": "0.3.0",
     "through2": "^2.0.0",
     "vinyl-transform": "1.0.0",
-    "watchify": "3.6.0"
+    "watchify": "3.6.0",
+    "yards": "^0.1.4"
   }
 }
