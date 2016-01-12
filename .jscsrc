@@ -1,5 +1,7 @@
 {
   "preset": "airbnb",
+  "disallowSemicolons": true,
+  "requireSemicolons": null,
   "excludeFiles": [
     "*.map",
     ".idea/**",
