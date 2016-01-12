@@ -3,6 +3,6 @@
  */
 const PI = 3.14
 
-$(document).ready(function() {
+$(document).ready(function () {
   console.log('Hello world ' + PI)
 })

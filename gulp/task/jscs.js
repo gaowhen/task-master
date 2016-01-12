@@ -11,7 +11,7 @@ if (!files || files.length === 0) {
 
 function lint() {
   return gulp.src(files)
-    .pipe(jscs({fix: false}))
+    .pipe(jscs({fix: true}))
     .pipe(jscs.reporter())
     .pipe(jscs.reporter('fail'))
 }
