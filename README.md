@@ -11,6 +11,7 @@ Gulp tasks collection
 * gulp-eslint
 * gulp-hook
 * gulp-jade
+* gulp-jscs
 * gulp-less
 * gulp-lint
 * gulp-minify
