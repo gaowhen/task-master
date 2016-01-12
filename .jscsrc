@@ -1,0 +1,11 @@
+{
+  "preset": "airbnb",
+  "excludeFiles": [
+    "*.map",
+    ".idea/**",
+    "static/script/lib/**",
+    "gulp/task/**",
+    ".pre-commit",
+    ".commit-msg.js"
+  ]
+}
