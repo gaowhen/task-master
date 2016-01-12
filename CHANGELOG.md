@@ -6,6 +6,7 @@
 
 * add file ([14adf3c](https://github.com/gaowhen/task-master/commit/14adf3c))
 * make file executable ([c375a7f](https://github.com/gaowhen/task-master/commit/c375a7f))
+* specific gulp path ([4521187](https://github.com/gaowhen/task-master/commit/4521187))
 
 ### Features
 
