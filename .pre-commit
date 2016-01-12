@@ -6,9 +6,9 @@
 CHANGED_ASSETS="$(git diff --cached --name-only --diff-filter=ACM 2>/dev/null | grep '.js$' | xargs)"
 
 if [ -n "${CHANGED_ASSETS}" ]; then
-    # npm run gulp lint --file="${CHANGED_ASSETS}"
-    # npm run gulp eslint --file="${CHANGED_ASSETS}"
-    gulp jscs --file="${CHANGED_ASSETS}"
+    # ./node_modules/.bin/gulp lint --file="${CHANGED_ASSETS}"
+    # ./node_modules/.bin/gulp eslint --file="${CHANGED_ASSETS}"
+    ./node_modules/.bin/gulp jscs --file="${CHANGED_ASSETS}"
     exit $?
 else
     exit 0
