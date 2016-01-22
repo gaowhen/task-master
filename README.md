@@ -7,6 +7,7 @@ Gulp tasks collection
 ### Tasks
 
 * gulp-browserify
+* gulp-bump
 * gulp-commitmsg
 * gulp-eslint
 * gulp-hook
