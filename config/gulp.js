@@ -10,7 +10,7 @@ var src = {
   commitmsg: path.resolve(__dirname, '../.commit-msg.js'),
   git: path.resolve(__dirname, '../.git'),
   view: path.resolve(__dirname, '../view'),
-  pkg: path.resolve(__dirname, '../package.json')
+  pkg: path.resolve(__dirname, '../package.json'),
 }
 
 var dist = {
@@ -19,12 +19,12 @@ var dist = {
   css: path.resolve(__dirname, '../build/css'),
   img: path.resolve(__dirname, '../build/img'),
   view: path.resolve(__dirname, '../build/view'),
-  pkg: path.resolve(__dirname, '../')
+  pkg: path.resolve(__dirname, '../'),
 }
 
 var config = {
   src: src,
-  dist: dist
+  dist: dist,
 }
 
 module.exports = config
