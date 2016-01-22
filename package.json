@@ -1,6 +1,6 @@
 {
   "name": "task-master",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a gulp tasks collection",
   "main": "app.js",
   "scripts": {
@@ -41,6 +41,7 @@
     "conventional-changelog": "^0.5.3",
     "cz-conventional-changelog": "^1.1.5",
     "gulp": "3.9.0",
+    "gulp-bump": "1.0.0",
     "gulp-cssnano": "^2.1.0",
     "gulp-filesize": "0.0.6",
     "gulp-if": "^2.0.0",

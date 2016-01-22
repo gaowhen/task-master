@@ -9,7 +9,8 @@ var src = {
   precommit: path.resolve(__dirname, '../.pre-commit'),
   commitmsg: path.resolve(__dirname, '../.commit-msg.js'),
   git: path.resolve(__dirname, '../.git'),
-  view: path.resolve(__dirname, '../view')
+  view: path.resolve(__dirname, '../view'),
+  pkg: path.resolve(__dirname, '../package.json')
 }
 
 var dist = {
@@ -17,7 +18,8 @@ var dist = {
   js: path.resolve(__dirname, '../build/script'),
   css: path.resolve(__dirname, '../build/css'),
   img: path.resolve(__dirname, '../build/img'),
-  view: path.resolve(__dirname, '../build/view')
+  view: path.resolve(__dirname, '../build/view'),
+  pkg: path.resolve(__dirname, '../')
 }
 
 var config = {
