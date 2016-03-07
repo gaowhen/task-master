@@ -7,14 +7,14 @@ function getEntries() {
   var map = {}
   var fileList = glob.sync([
     './static/script/**/*.js',
-    '!./static/script/lib/**/*.js'
+    '!./static/script/lib/**/*.js',
   ])
 
   fileList.forEach(function(file) {
     var name = path.basename(file)
     var filePath = path.relative(config.src.js, file)
 
-    if(name.match(/^[^_](.+)\.js$/)) {
+    if (name.match(/^[^_](.+)\.js$/)) {
       map[filePath] = file
     }
   })
@@ -27,22 +27,24 @@ module.exports = {
   entry: getEntries(),
   output: {
     path: config.dist.webpack,
-    filename: '[name]'
+    filename: '[name]',
   },
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/,
-      query: {
-        presets: ['es2015', 'react'],
-        cacheDirectory: true
-      }
-    }]
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react'],
+          cacheDirectory: true,
+        },
+      },
+    ],
   },
-  devtool: "#inline-source-map",
+  devtool: '#inline-source-map',
   externals: {
-    'jquery': '$',
-    'react': 'React'
-  }
+    jquery: '$',
+    react: 'React',
+  },
 }
