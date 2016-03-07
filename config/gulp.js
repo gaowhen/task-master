@@ -11,6 +11,7 @@ var src = {
   git: path.resolve(__dirname, '../.git'),
   view: path.resolve(__dirname, '../view'),
   pkg: path.resolve(__dirname, '../package.json'),
+  webpack: path.resolve(__dirname, '../static/script/webpack/'),
 }
 
 var dist = {
@@ -20,6 +21,7 @@ var dist = {
   img: path.resolve(__dirname, '../build/img'),
   view: path.resolve(__dirname, '../build/view'),
   pkg: path.resolve(__dirname, '../'),
+  webpack: path.resolve(__dirname, '../build/script/webpack/'),
 }
 
 var config = {

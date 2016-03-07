@@ -4,10 +4,11 @@ var livereload = require('gulp-livereload')
 var watch = require('gulp-watch')
 
 gulp.task('watch', [
+  'webpack',
   'less',
   'stylus',
   'libjs',
-  'watchify',
+  //'watchify',
   'image',
   'jade'
 ], function () {
@@ -29,5 +30,9 @@ gulp.task('watch', [
 
   watch(config.src.view + '/**/*.jade', function () {
     gulp.start('jade')
+  })
+
+  watch(config.dist.webpack + '/**/*.js', function() {
+    gulp.start('webpack')
   })
 })
